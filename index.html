@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoldSeek Terminal</title>
+    <title>Tim Analis Market Intelligence</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome untuk Ikon -->
@@ -40,8 +40,8 @@
     <aside class="w-64 bg-white border-r border-slate-200 flex flex-col justify-between h-full flex-shrink-0">
         <div>
             <div class="p-6">
-                <h1 class="text-xl font-bold text-slate-900">GoldSeek</h1>
-                <p class="text-sm text-slate-500">Market Intelligence</p>
+                <h1 class="text-xl font-bold text-slate-900">Tim Analis</h1>
+                <p class="text-xs text-slate-500 font-medium tracking-wider mt-1 uppercase">Market Intelligence</p>
             </div>
             <nav class="mt-2 px-4 space-y-1">
                 <a href="#" class="flex items-center px-4 py-3 bg-slate-900 text-white rounded-lg text-sm font-medium transition-colors">
@@ -104,7 +104,7 @@
                         <span class="text-xs text-slate-300 font-medium">15 MIN READ</span>
                     </div>
                     <h2 class="text-3xl font-bold mb-4 w-2/3">Gold Mid-Tiers' Fundamentals: Navigating Market Shifts</h2>
-                    <p class="text-slate-300 w-2/3 mb-8 leading-relaxed">Since 1995, Goldseek.com has served millions of readers with the latest gold news. Understand why high gold prices are enduring for the metal's own strong fundamental reasons, reshaping institutional portfolios.</p>
+                    <p class="text-slate-300 w-2/3 mb-8 leading-relaxed">Tim Analis Market Intelligence provides institutional-level coverage of the latest precious metals trends. Understand why high gold prices are enduring for the metal's own strong fundamental reasons, reshaping institutional portfolios.</p>
                     <button class="bg-white text-slate-900 px-6 py-2.5 rounded-lg font-medium hover:bg-slate-100 transition-colors flex items-center space-x-2">
                         <span>Read Article</span>
                         <i class="fa-solid fa-arrow-right text-sm"></i>
@@ -264,7 +264,7 @@
                         <div class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-6 text-white relative overflow-hidden">
                             <i class="fa-solid fa-award absolute -top-4 -right-4 text-8xl text-white opacity-5"></i>
                             <h3 class="text-xl font-bold mb-2">Free Newsletters</h3>
-                            <p class="text-sm text-slate-300 mb-4 w-4/5">Sign up for GoldSeek Daily Edition & Silver Seeker Report.</p>
+                            <p class="text-sm text-slate-300 mb-4 w-4/5">Sign up for Tim Analis Daily Edition & Silver Seeker Report.</p>
                         </div>
 
                     </div>
@@ -279,88 +279,5 @@
 
     </main>
 
-    <!-- ========================================== -->
-    <!-- POP UP PROMOSI GADAI EFEK PEGADAIAN        -->
-    <!-- ========================================== -->
-    <div id="promoModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300">
-        <div class="bg-white rounded-2xl w-full max-w-md overflow-hidden shadow-2xl transform scale-95 transition-transform duration-300" id="modalContent">
-            
-            <!-- Modal Header / Banner -->
-            <div class="bg-gradient-to-r from-emerald-600 to-emerald-800 p-6 text-center relative">
-                <button id="closeModalBtn" class="absolute top-3 right-3 text-white/70 hover:text-white transition">
-                    <i class="fa-solid fa-xmark text-xl"></i>
-                </button>
-                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-3 shadow-inner">
-                    <i class="fa-solid fa-money-bill-trend-up text-3xl text-emerald-600"></i>
-                </div>
-                <h2 class="text-2xl font-bold text-white mb-1">Gadai Efek Pegadaian</h2>
-                <p class="text-emerald-100 text-sm">Solusi Dana Tunai Instan</p>
-            </div>
-
-            <!-- Modal Body -->
-            <div class="p-6">
-                <p class="text-slate-600 text-center mb-5 text-sm leading-relaxed">
-                    Butuh dana cepat untuk trading atau kebutuhan mendesak tanpa harus menjual portofolio saham/obligasi kesayangan Anda?
-                </p>
-                
-                <ul class="space-y-3 mb-6">
-                    <li class="flex items-center text-sm text-slate-700">
-                        <i class="fa-solid fa-circle-check text-emerald-500 mr-3"></i> Proses Cepat & Aman
-                    </li>
-                    <li class="flex items-center text-sm text-slate-700">
-                        <i class="fa-solid fa-circle-check text-emerald-500 mr-3"></i> Saham & Obligasi (SBN) tetap milik Anda
-                    </li>
-                    <li class="flex items-center text-sm text-slate-700">
-                        <i class="fa-solid fa-circle-check text-emerald-500 mr-3"></i> Bunga Kompetitif & Diawasi OJK
-                    </li>
-                </ul>
-
-                <button class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 rounded-xl transition shadow-lg shadow-emerald-200">
-                    Pelajari Lebih Lanjut
-                </button>
-                <button id="laterBtn" class="w-full mt-3 text-slate-400 hover:text-slate-600 text-sm font-medium transition">
-                    Mungkin Nanti
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <!-- JAVASCRIPT UNTUK MODAL POP-UP -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const modal = document.getElementById('promoModal');
-            const modalContent = document.getElementById('modalContent');
-            const closeBtn = document.getElementById('closeModalBtn');
-            const laterBtn = document.getElementById('laterBtn');
-
-            // Fungsi untuk menampilkan modal
-            const showModal = () => {
-                modal.classList.remove('opacity-0', 'pointer-events-none');
-                modalContent.classList.remove('scale-95');
-                modalContent.classList.add('scale-100');
-            };
-
-            // Fungsi untuk menyembunyikan modal
-            const hideModal = () => {
-                modal.classList.add('opacity-0', 'pointer-events-none');
-                modalContent.classList.remove('scale-100');
-                modalContent.classList.add('scale-95');
-            };
-
-            // Munculkan modal setelah 1.5 detik halaman dimuat
-            setTimeout(showModal, 1500);
-
-            // Event listener untuk tombol close
-            closeBtn.addEventListener('click', hideModal);
-            laterBtn.addEventListener('click', hideModal);
-
-            // Tutup modal jika user klik area luar (backdrop)
-            modal.addEventListener('click', (e) => {
-                if (e.target === modal) {
-                    hideModal();
-                }
-            });
-        });
-    </script>
 </body>
 </html>
