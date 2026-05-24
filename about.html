@@ -14,9 +14,8 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f8fafc; /* Latar belakang abu-abu sangat muda */
+            background-color: #f8fafc;
         }
-        /* Custom Scrollbar */
         ::-webkit-scrollbar {
             width: 6px;
         }
@@ -78,15 +77,12 @@
         
         <!-- TOPBAR -->
         <header class="flex items-center justify-between px-10 py-5 bg-white border-b border-slate-200 shrink-0">
-            <!-- Search -->
             <div class="relative w-[400px]">
                 <i class="fa-solid fa-magnifying-glass absolute left-0 top-1/2 transform -translate-y-1/2 text-slate-400"></i>
                 <input type="text" placeholder="Search instruments, tickers, or news..." class="w-full pl-8 pr-4 py-2 bg-transparent focus:outline-none text-sm text-slate-700 placeholder-slate-400 border border-slate-200 rounded-md">
             </div>
             
-            <!-- Right Actions (Market Overview) -->
             <div class="flex items-center space-x-6 text-xs">
-                <!-- Status & IHSG -->
                 <div class="text-right">
                     <div class="flex items-center justify-end space-x-1.5 text-emerald-600 font-bold mb-0.5 text-[10px] tracking-wider">
                         <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse"></span>
@@ -100,7 +96,6 @@
                 
                 <div class="h-8 border-l border-slate-300"></div>
                 
-                <!-- Value -->
                 <div class="text-right">
                     <div class="text-slate-500 font-semibold mb-0.5 uppercase tracking-wider text-[9px]">VALUE (IDR)</div>
                     <div class="font-semibold text-slate-900">12.45 Trillion</div>
@@ -108,7 +103,6 @@
 
                 <div class="h-8 border-l border-slate-300"></div>
 
-                <!-- Profile & Notifications -->
                 <button class="text-slate-600 hover:text-black relative">
                     <i class="fa-regular fa-bell text-xl"></i>
                 </button>
@@ -120,7 +114,6 @@
         <div class="flex-1 overflow-y-auto px-10 pb-10 pt-12">
             <div class="max-w-6xl mx-auto">
                 
-                <!-- HERO TEXT SECTION -->
                 <div class="mb-16">
                     <h1 class="text-4xl md:text-5xl font-bold mb-5 tracking-tight leading-tight">
                         <span class="text-black">Expertise Rooted in Heritage,</span><br>
@@ -143,9 +136,9 @@
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                         <!-- Advisor 1 -->
                         <div>
-                            <div class="w-32 h-32 rounded-full border border-slate-200 bg-white p-1 mb-5 shadow-sm">
-                                <img src="images/Mufri Yandi.png" alt="Mufri Yandi" class="w-full h-full rounded-full object-cover grayscale">
->
+                            <div class="w-32 h-32 rounded-full border border-slate-200 bg-white p-1 mb-5 shadow-sm overflow-hidden">
+                                <!-- MEMANGGIL FOTO MUFRI YANDI -->
+                                <img src="Mufri Yandi.png" alt="Mufri Yandi" class="w-full h-full object-cover">
                             </div>
                             <h3 class="text-lg font-bold text-black">Mufri Yandi</h3>
                             <p class="text-[10px] font-bold text-emerald-700 tracking-wider uppercase mb-4">ADVISORY BOARD MEMBER</p>
@@ -162,8 +155,9 @@
 
                         <!-- Advisor 2 -->
                         <div>
-                            <div class="w-32 h-32 rounded-full border border-slate-200 bg-white p-1 mb-5 shadow-sm">
-                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80&grayscale" alt="Kadek Eva Supurata" class="w-full h-full rounded-full object-cover grayscale">
+                            <div class="w-32 h-32 rounded-full border border-slate-200 bg-white p-1 mb-5 shadow-sm overflow-hidden">
+                                <!-- MEMANGGIL FOTO KADEK EVA SUPUTRA -->
+                                <img src="Kadek Eva Suputra.png" alt="Kadek Eva Suputra" class="w-full h-full object-cover">
                             </div>
                             <h3 class="text-lg font-bold text-black">Kadek Eva Suputra</h3>
                             <p class="text-[10px] font-bold text-emerald-700 tracking-wider uppercase mb-4">ADVISORY BOARD MEMBER</p>
@@ -192,8 +186,9 @@
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-12">
                         <!-- Member 1 -->
                         <div>
-                            <div class="w-32 h-32 rounded-full border border-slate-200 bg-white p-1 mb-5 shadow-sm">
-                                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=200&q=80&grayscale" alt="Dimas Ramadhan Z." class="w-full h-full rounded-full object-cover grayscale">
+                            <div class="w-32 h-32 rounded-full border border-slate-200 bg-white p-1 mb-5 shadow-sm overflow-hidden">
+                                <!-- MEMANGGIL FOTO MUCHAMMAD (Dipasang sementara untuk Dimas) -->
+                                <img src="Muchammad.png" alt="Dimas Ramadhan Z." class="w-full h-full object-cover">
                             </div>
                             <h3 class="text-lg font-bold text-black">Dimas Ramadhan Z.</h3>
                             <p class="text-[10px] font-bold text-emerald-700 tracking-wider uppercase mb-4">MANAGING DIRECTOR</p>
@@ -216,8 +211,9 @@
 
                         <!-- Member 2 -->
                         <div>
-                            <div class="w-32 h-32 rounded-full border border-slate-200 bg-white p-1 mb-5 shadow-sm">
-                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&q=80&grayscale" alt="Rahmat Agung B." class="w-full h-full rounded-full object-cover grayscale">
+                            <div class="w-32 h-32 rounded-full border border-slate-200 bg-white p-1 mb-5 shadow-sm overflow-hidden">
+                                <!-- GAMBAR INTERNET SEMENTARA (Belum diupload) -->
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&q=80&grayscale" alt="Rahmat Agung B." class="w-full h-full object-cover grayscale">
                             </div>
                             <h3 class="text-lg font-bold text-black">Rahmat Agung B.</h3>
                             <p class="text-[10px] font-bold text-emerald-700 tracking-wider uppercase mb-4">HEAD OF MACRO STRATEGY</p>
@@ -240,8 +236,9 @@
 
                         <!-- Member 3 -->
                         <div>
-                            <div class="w-32 h-32 rounded-full border border-slate-200 bg-white p-1 mb-5 shadow-sm">
-                                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80&grayscale" alt="Bimo Satrio" class="w-full h-full rounded-full object-cover grayscale">
+                            <div class="w-32 h-32 rounded-full border border-slate-200 bg-white p-1 mb-5 shadow-sm overflow-hidden">
+                                <!-- MEMANGGIL FOTO BIMO -->
+                                <img src="Bimo.png" alt="Bimo Satrio" class="w-full h-full object-cover">
                             </div>
                             <h3 class="text-lg font-bold text-black">Bimo Satrio</h3>
                             <p class="text-[10px] font-bold text-emerald-700 tracking-wider uppercase mb-4">QUANT LEAD</p>
@@ -264,8 +261,9 @@
 
                         <!-- Member 4 -->
                         <div>
-                            <div class="w-32 h-32 rounded-full border border-slate-200 bg-white p-1 mb-5 shadow-sm">
-                                <img src="https://images.unsplash.com/photo-1504257432389-52343af06ae3?auto=format&fit=crop&w=200&q=80&grayscale" alt="Ananta Rilo P.H." class="w-full h-full rounded-full object-cover grayscale">
+                            <div class="w-32 h-32 rounded-full border border-slate-200 bg-white p-1 mb-5 shadow-sm overflow-hidden">
+                                <!-- MEMANGGIL FOTO ANANTA -->
+                                <img src="Ananta.png" alt="Ananta Rilo P.H." class="w-full h-full object-cover">
                             </div>
                             <h3 class="text-lg font-bold text-black">Ananta Rilo P.H.</h3>
                             <p class="text-[10px] font-bold text-emerald-700 tracking-wider uppercase mb-4">OPERATIONS PRINCIPAL</p>
@@ -288,8 +286,9 @@
 
                         <!-- Member 5 -->
                         <div>
-                            <div class="w-32 h-32 rounded-full border border-slate-200 bg-white p-1 mb-5 shadow-sm">
-                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80&grayscale" alt="Lailiya Rohmana" class="w-full h-full rounded-full object-cover grayscale">
+                            <div class="w-32 h-32 rounded-full border border-slate-200 bg-white p-1 mb-5 shadow-sm overflow-hidden">
+                                <!-- MEMANGGIL FOTO LAILIYA -->
+                                <img src="Lailiya.png" alt="Lailiya Rohmana" class="w-full h-full object-cover">
                             </div>
                             <h3 class="text-lg font-bold text-black">Lailiya Rohmana</h3>
                             <p class="text-[10px] font-bold text-emerald-700 tracking-wider uppercase mb-4">SENIOR RESEARCH ANALYST</p>
@@ -312,8 +311,9 @@
 
                         <!-- Member 6 -->
                         <div>
-                            <div class="w-32 h-32 rounded-full border border-slate-200 bg-white p-1 mb-5 shadow-sm">
-                                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=200&q=80&grayscale" alt="Kelvin Osfred D." class="w-full h-full rounded-full object-cover grayscale">
+                            <div class="w-32 h-32 rounded-full border border-slate-200 bg-white p-1 mb-5 shadow-sm overflow-hidden">
+                                <!-- MEMANGGIL FOTO KELVIN -->
+                                <img src="Kelvin.png" alt="Kelvin Osfred D." class="w-full h-full object-cover">
                             </div>
                             <h3 class="text-lg font-bold text-black">Kelvin Osfred D.</h3>
                             <p class="text-[10px] font-bold text-emerald-700 tracking-wider uppercase mb-4">MARKET RISK OFFICER</p>
@@ -336,8 +336,9 @@
 
                         <!-- Member 7 -->
                         <div>
-                            <div class="w-32 h-32 rounded-full border border-slate-200 bg-white p-1 mb-5 shadow-sm">
-                                <img src="https://images.unsplash.com/photo-1517070208541-6ddc4d3efbcb?auto=format&fit=crop&w=200&q=80&grayscale" alt="Bagus Rizky W." class="w-full h-full rounded-full object-cover grayscale">
+                            <div class="w-32 h-32 rounded-full border border-slate-200 bg-white p-1 mb-5 shadow-sm overflow-hidden">
+                                <!-- GAMBAR INTERNET SEMENTARA (Belum diupload) -->
+                                <img src="https://images.unsplash.com/photo-1517070208541-6ddc4d3efbcb?auto=format&fit=crop&w=200&q=80&grayscale" alt="Bagus Rizky W." class="w-full h-full object-cover grayscale">
                             </div>
                             <h3 class="text-lg font-bold text-black">Bagus Rizky W.</h3>
                             <p class="text-[10px] font-bold text-emerald-700 tracking-wider uppercase mb-4">COMPLIANCE LEAD</p>
