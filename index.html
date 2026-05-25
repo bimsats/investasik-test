@@ -9,24 +9,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
-        .sidebar-item { @apply flex items-center px-8 py-3 text-slate-500 hover:text-black hover:bg-slate-50 transition-colors; }
-        .sidebar-item.active { @apply text-black font-semibold bg-slate-50 border-r-4 border-black; }
     </style>
 </head>
 <body class="flex h-screen overflow-hidden text-slate-900">
 
     <!-- SIDEBAR -->
-    <aside class="w-64 bg-white border-r border-slate-200 flex flex-col justify-between h-full flex-shrink-0">
+    <aside class="w-64 bg-white border-r border-slate-200 flex flex-col justify-between h-full flex-shrink-0 relative">
         <div>
+            <!-- Branding -->
             <div class="px-8 pt-10 pb-8">
-                <h1 class="text-xl font-bold text-black">Tim Analis Emas</h1>
+                <h1 class="text-xl font-bold text-black mb-1">Tim Analis Emas</h1>
                 <p class="text-[10px] text-slate-400 font-medium tracking-widest uppercase">FINANCIAL TERMINAL</p>
             </div>
-            <nav class="flex flex-col space-y-2 mt-4">
-                <a href="#" class="sidebar-item active"><i class="fa-solid fa-border-all w-6 text-lg"></i> Dashboard</a>
-                <a href="#" class="sidebar-item"><i class="fa-solid fa-chart-line w-6 text-lg"></i> Market</a>
-                <a href="about.html" class="sidebar-item"><i class="fa-regular fa-circle-info w-6 text-lg"></i> About Us</a>
-                <a href="#" class="sidebar-item"><i class="fa-solid fa-gear w-6 text-lg"></i> Settings</a>
+
+            <!-- Navigation -->
+            <nav class="flex flex-col space-y-2 mt-4 relative">
+                <!-- Active Link (Dashboard) -->
+                <a href="index.html" class="flex items-center px-8 py-3 text-black font-semibold bg-slate-50 relative">
+                    <i class="fa-solid fa-border-all w-6 text-lg"></i>
+                    <span class="text-sm">Dashboard</span>
+                    <!-- Black right border indicator -->
+                    <div class="absolute right-0 top-0 bottom-0 w-1 bg-black"></div>
+                </a>
+                
+                <a href="#" class="flex items-center px-8 py-3 text-slate-500 hover:text-black hover:bg-slate-50 transition-colors">
+                    <i class="fa-solid fa-chart-line w-6 text-lg"></i>
+                    <span class="text-sm font-medium">Market</span>
+                </a>
+                <a href="#" class="flex items-center px-8 py-3 text-slate-500 hover:text-black hover:bg-slate-50 transition-colors">
+                    <i class="fa-solid fa-chart-simple w-6 text-lg"></i>
+                    <span class="text-sm font-medium">Insights</span>
+                </a>
+                
+                <!-- Inactive Link (About Us) -->
+                <a href="about.html" class="flex items-center px-8 py-3 text-slate-500 hover:text-black hover:bg-slate-50 transition-colors">
+                    <i class="fa-regular fa-circle-info w-6 text-lg"></i>
+                    <span class="text-sm font-medium">About Us</span>
+                </a>
+
+                <a href="#" class="flex items-center px-8 py-3 text-slate-500 hover:text-black hover:bg-slate-50 transition-colors">
+                    <i class="fa-solid fa-gear w-6 text-lg"></i>
+                    <span class="text-sm font-medium">Settings</span>
+                </a>
             </nav>
         </div>
     </aside>
@@ -34,7 +58,7 @@
     <!-- MAIN CONTENT -->
     <main class="flex-1 flex flex-col h-full overflow-hidden">
         <!-- Ticker Tape -->
-        <div class="h-12 border-b border-slate-200 bg-white">
+        <div class="h-12 border-b border-slate-200 bg-white shrink-0">
             <div class="tradingview-widget-container">
                 <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
                 {
@@ -99,7 +123,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </main>
